@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Application Form</h1>
+    <title>Application Form</title>
+</head>
+<body>
+    <form id="form">
+        <fieldset>
+        <h1>Personal Details</h1>
+        <p>
+            <label>First Name : <input name="firstname" id="name" onchange="upperCase()"></label>
+        </p>
+        <p>
+            <label>Last Name : <input name="lastname"></label>
+        </p>
+        <p>
+            Gender:
+            <label><input type="radio" name="gender" value="Male"/ id="gender" >Male</label>
+            <label><input type="radio" name="gender" value="Female"/>Female</label>
+        </p>
+        <p>
+            Email :
+            <label><input name="email" id="email"/></label>
+        </p>
+        <p>
+            <label>Date Of Birth : <input  type="date" name="birthDate" id="DOB"></label>
+        </p>
+        <p>
+            <label>Address : </br>
+                <textarea type="address" cols="50" rows="5"></textarea>
+            </label>
+        </p>
+        <P>
+            <button type="submit" id="submit" onsubmit="myFunction()">Submit</button>
+        </P>
+    </fieldset>
+    </form>
+    <script>
+        function upperCase(){
+            const x=document.getElementById("name");
+            x.value=x.value.toUpperCase()
+        }
+        function myFunction(){
+            let Email=document.getElementById('email').value;
+            let dateofbirth=document.getElementById('DOB').value;
+            if(Email==='' || dateofbirth===''){
+                alert('Must fill this field');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

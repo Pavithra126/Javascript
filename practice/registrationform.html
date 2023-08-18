@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div style="background-color: #1b1b32; color: white;" id="form">
+        <h1>Registration Form</h1>
+        <p>Please fill out this form with the required information</p>
+    <form method="post">
+        <fieldset>
+        <label for="first-name">Enter your First Name:
+            <input type="text" id="first-name" required/>
+        </label>
+        <label for="last-name">Enter your Last Name:
+            <input type="text" id="last-name" required/>
+        </label>
+        <label for="email">Enter your Email:
+            <input type="text" id="email" required/>
+        </label>
+        <label for="new-password">Create a New Password:
+            <input type="password" id="new-password" required/>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>
+            <input type="radio" id="Account-type"> Personal Account
+        </label>
+        <br>
+        <label>
+            <input type="radio" id="Account-type"> Business Account
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="terms-and-conditions"> I accept the <span style="text-decoration: underline;"> terms and conditions</span>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>Update a profile picture:<br>
+            <input type="file" id="profile-picture">
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>Input Your age(years):<br>
+            <input type="number" id="years" >
+        </label>
+    </fieldset>
+    <fieldset>
+        <label for="reffer">How did you hear about us?<br>
+         <select id="reffer">
+            <option value="">(select one)</option>
+            <option value="1">youtube</option>
+            <option value="2">instagram</option>
+        </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <label>Provide a bio:<br>
+           <textarea id="bio"></textarea>
+        </label>
+    </fieldset>
+     <button onclick="button()" type="submit">Submit</button>
+    </form>
+</div>
+<script src="registrationform.js"></script>
+</body>
+</html>

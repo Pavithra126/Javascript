@@ -1,0 +1,28 @@
+.container {
+    background-color: white;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px 0;
+  width: 100%;
+}
+button {
+    background-color: #4caf50;
+    width: 100%;
+    color: white;
+    border: none;
+    padding: 6px;
+    transition: background-color 0.2s ease;
+    margin: 10px 0;
+    cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
