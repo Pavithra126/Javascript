@@ -110,4 +110,3 @@ function play(){
     console.log(person["age"])
     
     
-    
